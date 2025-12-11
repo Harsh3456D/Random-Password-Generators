@@ -30,7 +30,15 @@ void generatePass(){
         cout << "Invalid length" << endl;
     };
 
+    if (length==0){
+        cout << "Invalid length" << endl;
+    };
+
     if (allchar.length()<0){
+        cout << "Kindly allow some characters" << endl;
+    };
+
+    if (allchar.length()==0){
         cout << "Kindly allow some characters" << endl;
     };
 
@@ -47,4 +55,5 @@ int main(){
     srand(time(0));
     generatePass();
     return 0;
+
 }
